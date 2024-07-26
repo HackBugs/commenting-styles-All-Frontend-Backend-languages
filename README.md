@@ -201,4 +201,151 @@ Here's a comprehensive list of frontend languages, backend languages, and databa
    - **Single-line Comment**: `# This is a single-line comment`
    - **Multi-line Comment**: Not directly supported; can use multiple single-line comments
 
-This list provides an overview of the languages and formats used in various DevOps tools and their commenting styles.
+- This list provides an overview of the languages and formats used in various DevOps tools and their commenting styles.
+-----------------------------------------------------------------------------------------------------------------------
+
+# Here's a quick overview of the syntax for the first few lines of code in various frontend, backend, and DevOps languages:
+
+### **Frontend Languages**
+
+#### **1. HTML (HyperText Markup Language)**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
+```
+
+#### **2. CSS (Cascading Style Sheets)**
+```css
+/* Basic CSS Example */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+}
+```
+
+#### **3. JavaScript**
+```javascript
+// Basic JavaScript Example
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+console.log(greet('World'));
+```
+
+#### **4. TypeScript**
+```typescript
+// Basic TypeScript Example
+function greet(name: string): string {
+    return `Hello, ${name}!`;
+}
+
+console.log(greet('World'));
+```
+
+### **Backend Languages**
+
+#### **1. Python**
+```python
+# Basic Python Example
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("World"))
+```
+
+#### **2. Java**
+```java
+// Basic Java Example
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+#### **3. JavaScript (Node.js)**
+```javascript
+// Basic Node.js Example
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello, World!\n');
+});
+
+server.listen(3000, () => {
+    console.log('Server running at http://localhost:3000/');
+});
+```
+
+#### **4. Ruby**
+```ruby
+# Basic Ruby Example
+def greet(name)
+  "Hello, #{name}!"
+end
+
+puts greet("World")
+```
+
+### **DevOps Languages/Formats**
+
+#### **1. YAML (YAML Ain't Markup Language)**
+```yaml
+# Basic YAML Example
+version: '3'
+services:
+  web:
+    image: nginx
+    ports:
+      - "80:80"
+```
+
+#### **2. HCL (HashiCorp Configuration Language)**
+```hcl
+# Basic HCL Example
+provider "aws" {
+  region = "us-west-2"
+}
+
+resource "aws_s3_bucket" "bucket" {
+  bucket = "my-bucket"
+}
+```
+
+#### **3. JSON (JavaScript Object Notation)**
+```json
+{
+  "version": "1.0",
+  "services": {
+    "web": {
+      "image": "nginx",
+      "ports": ["80:80"]
+    }
+  }
+}
+```
+
+#### **4. Dockerfile**
+```dockerfile
+# Basic Dockerfile Example
+FROM nginx:alpine
+COPY ./index.html /usr/share/nginx/html/index.html
+```
+
+This should give you a basic starting point for the syntax of each language or configuration format used in frontend, backend, and DevOps environments.
